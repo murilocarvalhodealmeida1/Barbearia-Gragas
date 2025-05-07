@@ -3,30 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barbearia Gragas</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Nossa História - Barbearia Gragas</title>
+  <link rel="stylesheet" href="nossa-historia.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
+    <header class="header-historia">
+        <div class="logo-container">
+          <a href="index.html" class="logo-link"> <!-- Âncora adicionada aqui -->
+            <h1 class="logo">Barbearia <span class="logo-destaque">Gragas</span></h1>
+          </a>
+    </div>
     <nav>
-      <div class="nav-item" onclick="toggleDropdown('servicos-dropdown')">Serviços
+      <div class="nav-item" onclick="toggleDropdown('servicos-dropdown')">
+        Serviços <i class="fas fa-chevron-down"></i>
         <div id="servicos-dropdown" class="dropdown">
           <a href="#">Corte de Cabelo</a>
           <a href="#">Barba</a>
-          <a href="#">Lavagem de Cabelo</a>
+          <a href="#">Lavagem</a>
           <a href="#">Sobrancelha</a>
         </div>
       </div>
 
-      <div class="nav-item" onclick="toggleDropdown('sobre-dropdown')">Sobre
+      <div class="nav-item" onclick="toggleDropdown('sobre-dropdown')">
+        Sobre <i class="fas fa-chevron-down"></i>
         <div id="sobre-dropdown" class="dropdown">
-          <a href="#">Nossa História</a>
+          <a href="nossa-historia.html">Nossa História</a>
           <a href="#">Equipe</a>
           <a href="#">Ambiente</a>
         </div>
       </div>
 
-      <div class="nav-item" onclick="toggleDropdown('contato-dropdown')">Contato
+      <div class="nav-item" onclick="toggleDropdown('contato-dropdown')">
+        Contato <i class="fas fa-chevron-down"></i>
         <div id="contato-dropdown" class="dropdown">
           <a href="#">WhatsApp</a>
           <a href="#">Instagram</a>
@@ -35,7 +44,8 @@
         </div>
       </div>
 
-      <div class="nav-item" onclick="toggleDropdown('agendamento-dropdown')">Agendamento
+      <div class="nav-item" onclick="toggleDropdown('agendamento-dropdown')">
+        Agendamento <i class="fas fa-chevron-down"></i>
         <div id="agendamento-dropdown" class="dropdown">
           <a href="#">Horários</a>
           <a href="#">Cadastrar-se</a>
@@ -44,6 +54,60 @@
       </div>
     </nav>
   </header>
+
+  <main class="historia-container">
+    <section class="historia-banner">
+      <div class="banner-overlay"></div>
+      <h1>Nossa <span>História</span></h1>
+    </section>
+
+    <section class="historia-content">
+      <article>
+        <p>
+          A <span class="destaque">Barbearia Gragas</span> nasceu de um projeto ousado e criativo desenvolvido por um grupo de estudantes do ensino médio técnico em <strong>Desenvolvimento de Sistemas</strong>.
+          Unindo paixão por tecnologia, design e empreendedorismo, esses jovens criaram não apenas um site moderno e funcional, mas também toda a identidade visual e conceito da barbearia.
+        </p>
+
+        <div class="historia-imagem">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Equipe da barbearia">
+        </div>
+
+        <p>
+          A ideia surgiu durante uma atividade prática do curso, onde os alunos foram desafiados a planejar uma empresa fictícia e construir soluções reais para ela. Assim nasceu a Gragas — uma barbearia com alma jovem, ousada e moderna, feita por e para pessoas com atitude.
+        </p>
+
+        <blockquote>
+          "Cada corte é uma obra de arte, cada cliente é uma história"
+          <cite>- Fundadores da Gragas</cite>
+        </blockquote>
+
+        <p>
+          Cada detalhe do site, do agendamento ao layout, foi pensado para oferecer uma experiência intuitiva, elegante e profissional. O projeto simboliza o potencial da educação técnica para transformar ideias em negócios e estudantes em protagonistas da própria história.
+        </p>
+
+        <p>
+          Hoje, a <span class="destaque">Barbearia Gragas</span> representa mais do que cortes de cabelo: ela representa inovação, trabalho em equipe e criatividade sem limites.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer-historia">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>Barbearia <span>Gragas</span></h2>
+        <p>Cortes que transformam</p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Barbearia Gragas. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <script>
     function toggleDropdown(id) {
@@ -63,4 +127,3 @@
   </script>
 </body>
 </html>
-

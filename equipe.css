@@ -1,0 +1,84 @@
+/* EQUIPE.CSS */
+.equipe-page {
+    background: var(--cinza);
+    padding: 0 5% 5rem;
+  }
+  
+  .membros-equipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 1200px;
+  }
+  
+  .membro-card {
+    background: var(--branco);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  
+  .membro-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .membro-foto {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .membro-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .membro-card:hover .membro-foto img {
+    transform: scale(1.1);
+  }
+  
+  .social-membro {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    transition: bottom 0.3s;
+  }
+  
+  .membro-card:hover .social-membro {
+    bottom: 20px;
+  }
+  
+  .social-membro a {
+    background: var(--dourado);
+    color: var(--preto);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+  }
+  
+  .membro-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .cargo {
+    color: var(--dourado);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .bio {
+    padding: 0 1.5rem;
+    color: var(--cinza-escuro);
+  }

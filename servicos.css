@@ -1,0 +1,83 @@
+/* SERVICOS.CSS */
+.servicos-page {
+    background: var(--branco);
+    padding: 0 5% 5rem;
+  }
+  
+  .banner-interno {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                url('../imagens/banner-servicos.jpg') center/cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .banner-interno h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .banner-interno h1 span {
+    color: var(--dourado);
+  }
+  
+  .servico-destaque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    align-items: center;
+  }
+  
+  .servico-imagem img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .servico-imagem img:hover {
+    transform: scale(1.02);
+  }
+  
+  .beneficios li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .beneficios i {
+    color: var(--dourado);
+  }
+  
+  .preco-tempo {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .preco {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dourado);
+  }
+  
+  .tempo {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--cinza-escuro);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .servico-destaque {
+      grid-template-columns: 1fr;
+    }
+  }

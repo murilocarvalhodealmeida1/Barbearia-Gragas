@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barbearia Gragas</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Gragas | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="nav-item" onclick="toggleDropdown('servicos-dropdown')">Serviços
-        <div id="servicos-dropdown" class="dropdown">
+  <!-- Header/Navbar -->
+  <header class="header">
+    <div class="logo">
+      <h1>Barbearia <span>Gragas</span></h1>
+    </div>
+    
+    <nav class="navbar">
+      <div class="nav-item dropdown">
+        <button class="dropbtn">Serviços <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
           <a href="#">Corte de Cabelo</a>
           <a href="#">Barba</a>
-          <a href="#">Lavagem de Cabelo</a>
+          <a href="#">Lavagem</a>
           <a href="#">Sobrancelha</a>
         </div>
       </div>
 
-      <div class="nav-item" onclick="toggleDropdown('sobre-dropdown')">Sobre
-        <div id="sobre-dropdown" class="dropdown">
-          <a href="#">Nossa História</a>
-          <a href="#">Equipe</a>
-          <a href="#">Ambiente</a>
+      <div class="nav-item dropdown">
+        <button class="dropbtn">Sobre <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="nossa-historia.html">Nossa História</a>
+          <a href="equipe.html">Equipe</a>
+          <a href="ambiente.html">Ambiente</a>
         </div>
       </div>
 
-      <div class="nav-item" onclick="toggleDropdown('contato-dropdown')">Contato
-        <div id="contato-dropdown" class="dropdown">
+      <div class="nav-item dropdown">
+        <button class="dropbtn">Contato <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
           <a href="#">WhatsApp</a>
           <a href="#">Instagram</a>
           <a href="#">Telefone</a>
@@ -35,31 +44,100 @@
         </div>
       </div>
 
-      <div class="nav-item" onclick="toggleDropdown('agendamento-dropdown')">Agendamento
-        <div id="agendamento-dropdown" class="dropdown">
-          <a href="#">Horários</a>
-          <a href="#">Cadastrar-se</a>
-          <a href="#">Login</a>
-        </div>
-      </div>
+      <a href="#" class="nav-item cta">Agendar</a>
     </nav>
   </header>
 
-  <script>
-    function toggleDropdown(id) {
-      const dropdown = document.getElementById(id);
-      const allDropdowns = document.querySelectorAll('.dropdown');
-      allDropdowns.forEach(d => {
-        if (d.id !== id) d.classList.remove('show');
-      });
-      dropdown.classList.toggle('show');
-    }
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Corte Premium <span>que transforma</span></h2>
+      <p>Estilo e tradição em cada detalhe</p>
+      <a href="#" class="btn">Agende agora</a>
+    </div>
+  </section>
 
-    window.addEventListener('click', function (e) {
-      if (!e.target.closest('.nav-item')) {
-        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('show'));
-      }
-    });
-  </script>
+  <!-- Serviços -->
+  <section class="servicos">
+    <h2 class="section-title">Nossos <span>Serviços</span></h2>
+    
+    <div class="servicos-grid">
+      <div class="servico-card">
+        <div class="servico-icon">
+          <i class="fas fa-cut"></i>
+        </div>
+        <h3>Corte de Cabelo</h3>
+        <p>Técnicas modernas com acabamento perfeito</p>
+        <span class="preco">R$ 50,00</span>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icon">
+          <i class="fas fa-air-freshener"></i>
+        </div>
+        <h3>Barba Completa</h3>
+        <p>Modelagem e tratamento profissional</p>
+        <span class="preco">R$ 40,00</span>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icon">
+          <i class="fas fa-spa"></i>
+        </div>
+        <h3>Pacote VIP</h3>
+        <p>Corte + Barba + Hidratação</p>
+        <span class="preco">R$ 80,00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="sobre">
+    <div class="sobre-content">
+      <h2 class="section-title">Conheça nossa <span>História</span></h2>
+      <p>Fundada por estudantes de Desenvolvimento de Sistemas, a Barbearia Gragas combina tradição barbearia com inovação tecnológica.</p>
+      <a href="nossa-historia.html" class="btn-outline">Saiba mais</a>
+    </div>
+    <div class="sobre-image">
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Interior da barbearia">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Barbearia <span>Gragas</span></h3>
+        <p>Cortes que transformam vidas desde 2023</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Horário</h3>
+        <p>Seg-Sex: 9h às 19h</p>
+        <p>Sábado: 10h às 16h</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+        <p><i class="fas fa-map-marker-alt"></i> Rua da Barbearia, 123</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Redes Sociais</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2023 Barbearia Gragas. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
