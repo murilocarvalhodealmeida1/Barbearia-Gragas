@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Gragas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-item" onclick="toggleDropdown('servicos-dropdown')">Serviços
+        <div id="servicos-dropdown" class="dropdown">
+          <a href="#">Corte de Cabelo</a>
+          <a href="#">Barba</a>
+          <a href="#">Lavagem de Cabelo</a>
+          <a href="#">Sobrancelha</a>
+        </div>
+      </div>
+
+      <div class="nav-item" onclick="toggleDropdown('sobre-dropdown')">Sobre
+        <div id="sobre-dropdown" class="dropdown">
+          <a href="#">Nossa História</a>
+          <a href="#">Equipe</a>
+          <a href="#">Ambiente</a>
+        </div>
+      </div>
+
+      <div class="nav-item" onclick="toggleDropdown('contato-dropdown')">Contato
+        <div id="contato-dropdown" class="dropdown">
+          <a href="#">WhatsApp</a>
+          <a href="#">Instagram</a>
+          <a href="#">Telefone</a>
+          <a href="#">Localização</a>
+        </div>
+      </div>
+
+      <div class="nav-item" onclick="toggleDropdown('agendamento-dropdown')">Agendamento
+        <div id="agendamento-dropdown" class="dropdown">
+          <a href="#">Horários</a>
+          <a href="#">Cadastrar-se</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    function toggleDropdown(id) {
+      const dropdown = document.getElementById(id);
+      const allDropdowns = document.querySelectorAll('.dropdown');
+      allDropdowns.forEach(d => {
+        if (d.id !== id) d.classList.remove('show');
+      });
+      dropdown.classList.toggle('show');
+    }
+
+    window.addEventListener('click', function (e) {
+      if (!e.target.closest('.nav-item')) {
+        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('show'));
+      }
+    });
+  </script>
+</body>
+</html>
