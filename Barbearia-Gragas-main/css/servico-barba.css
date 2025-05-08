@@ -1,0 +1,86 @@
+/* ESTILOS ESPECÍFICOS PARA BARBA */
+.hero-servico {
+    height: 60vh;
+    background-size: cover !important;
+    background-position: center 70% !important;
+  }
+  
+  .etapas-tratamento {
+    margin: 2rem 0;
+  }
+  
+  .etapa {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .etapa-numero {
+    background: var(--dourado);
+    color: var(--preto);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+  
+  .produtos-utilizados {
+    margin-top: 3rem;
+  }
+  
+  .produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .produto img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .tipos-barba {
+    background: var(--preto);
+    color: var(--branco);
+    padding: 4rem 0;
+  }
+  
+  .tipos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .tipo-card {
+    background: var(--cinza-escuro);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .tipo-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .tipo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .tipo-info {
+    padding: 1.5rem;
+  }
+  
+  .tipo-info h3 {
+    color: var(--dourado);
+    margin-bottom: 0.5rem;
+  }

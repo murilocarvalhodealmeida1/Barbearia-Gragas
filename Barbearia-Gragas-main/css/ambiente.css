@@ -1,0 +1,66 @@
+/* AMBIENTE.CSS */
+.ambiente-page {
+    padding: 0 5% 5rem;
+  }
+  
+  .galeria-ambiente {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .fotos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .foto-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .foto-item.grande {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .foto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .foto-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .diferenciais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 4rem auto;
+    max-width: 1200px;
+  }
+  
+  .diferencial-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .diferencial-card i {
+    font-size: 2.5rem;
+    color: var(--dourado);
+    margin-bottom: 1.5rem;
+  }
+  
+  .diferencial-card h3 {
+    margin-bottom: 1rem;
+  }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Gragas | Premium</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR COM DROPDOWN -->
+    <header>
+        <div class="logo">
+            <h1>Barbearia Gragas</h1>
+        </div>
+        <nav class="menu">
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Serviços <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="corte-cabelo.html">Corte de Cabelo</a>
+                    <a href="barba.html">Barba</a>
+                    <a href="sobrancelha.html">Sobrancelha</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Sobre Nós <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="nossa-historia.html">Nossa História</a>
+                    <a href="ambiente.html">Ambiente</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Agendamento <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="agendar.html">Agendar Online</a>
+                    <a href="horarios.html">Horários</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Contato <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="whatsapp.html">WhatsApp</a>
+                    <a href="localizacao.html">Localização</a>
+                </div>
+            </div>
+            
+            <a href="login.html" class="botao-login"><i class="fas fa-user"></i> Login</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Estilo e Tradição</h2>
+            <p>A melhor experiência em barbearia premium da cidade.</p>
+            <a href="agendar.html" class="botao-destaque">Agendar Horário</a>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS DESTAQUE -->
+    <section class="servicos-destaque">
+        <h3>Nossos Serviços</h3>
+        <div class="grid-servicos">
+            <div class="card-servico">
+                <img src="../imagens/servicos/degrade.avif" alt="Corte de Cabelo">
+                <h4>Corte Premium</h4>
+                <a href="corte-cabelo.html" class="botao-saiba-mais">Saiba Mais</a>
+            </div>
+            <div class="card-servico">
+                <img src="../imagens/servicos/barba.webp" alt="Barba">
+                <h4>Barba</h4>
+                <a href="barba.html" class="botao-saiba-mais">Saiba Mais</a>
+            </div>
+            <div class="card-servico">
+                <img src="../imagens/servicos/sombrancelha.avif" alt="Sobrancelha">
+                <h4>Sobrancelha</h4>
+                <a href="sobrancelha.html" class="botao-saiba-mais">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Barbearia Gragas. Todos os direitos reservados.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dropdown responsivo (opcional)
+        document.querySelectorAll('.dropbtn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
