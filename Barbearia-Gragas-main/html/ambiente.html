@@ -1,43 +1,163 @@
 <!DOCTYPE html>
-<html>
-<!-- Head igual -->
-<title>Ambiente | Barbearia Gragas</title>
-<link rel="stylesheet" href="ambiente.css">
-
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Gragas | Nosso Ambiente</title>
+    <link rel="stylesheet" href="../css/ambiente.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
 <body>
-  <!-- Header igual -->
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">Barbearia Gragas</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="ambiente.html" class="active">Nosso Ambiente</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="agendamento.html" class="btn-agendar">Agendar</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main class="ambiente-page">
-    <section class="galeria-ambiente">
-      <div class="galeria-header">
-        <h1>Nosso <span>Espaço</span></h1>
-        <p>Conforto e estilo para sua experiência</p>
-      </div>
-      
-      <div class="fotos-grid">
-        <div class="foto-item grande">
-          <img src="imagens/salao-1.jpg" alt="Área de espera">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nosso Ambiente</h1>
+            <p>Conforto, elegância e exclusividade em cada detalhe</p>
         </div>
-        <div class="foto-item">
-          <img src="imagens/salao-2.jpg" alt="Cadeiras de barbeiro">
-        </div>
-        <!-- Mais fotos -->
-      </div>
     </section>
 
-    <section class="diferenciais">
-      <h2>O que nos <span>diferencia</span></h2>
-      <div class="diferenciais-grid">
-        <div class="diferencial-card">
-          <i class="fas fa-couch"></i>
-          <h3>Conforto</h3>
-          <p>Ambiente climatizado e assentos premium</p>
+    <!-- Destaques -->
+    <section class="destaques">
+        <div class="container">
+            <h2>O Lugar Perfeito Para Sua Experiência</h2>
+            <div class="destaques-grid">
+                <div class="destaque-card">
+                    <i class="fas fa-couch"></i>
+                    <h3>Conforto Premium</h3>
+                    <p>Poltronas reclináveis e ambiente climatizado</p>
+                </div>
+                <div class="destaque-card">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    <h3>Area VIP</h3>
+                    <p>Bebidas artesanais e snacks gourmet</p>
+                </div>
+                <div class="destaque-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Decoração Exclusiva</h3>
+                    <p>Design industrial com toques vintage</p>
+                </div>
+            </div>
         </div>
-        <!-- Mais diferenciais -->
-      </div>
     </section>
-  </main>
 
-  <!-- Footer igual -->
+    <!-- Galeria -->
+    <section class="galeria">
+        <div class="container">
+            <h2>Conheça Nosso Espaço</h2>
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="assets/img/ambiente1.jpg" alt="Sala de espera">
+                    <div class="overlay">
+                        <h3>Sala de Espera</h3>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../imagens/equipe/space.jpg" alt="Área de atendimento">
+                    <div class="overlay">
+                        <h3>Estações de Trabalho</h3>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/ambiente3.jpg" alt="Bar">
+                    <div class="overlay">
+                        <h3>Bar Exclusivo</h3>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/ambiente4.jpg" alt="Detalhes">
+                    <div class="overlay">
+                        <h3>Detalhes Premium</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos">
+        <div class="container">
+            <h2>O Que Nossos Clientes Dizem</h2>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="avatar">R</div>
+                    <p>"Ambiente incrível! Me senti em um clube exclusivo."</p>
+                    <h4>Roberto Silva</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="avatar">M</div>
+                    <p>"A combinação de luxo e conforto é perfeita."</p>
+                    <h4>Marcos Oliveira</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Venha Conhecer Pessoalmente</h2>
+            <a href="agendamento.html" class="btn-cta">Agendar Visita</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Barbearia Gragas</h3>
+                    <p>Rua Premium, 123 - Centro</p>
+                    <p>Segunda a Sábado: 9h às 20h</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <p>(11) 99999-9999</p>
+                    <p>contato@barbeariagragas.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Redes Sociais</h3>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Barbearia Gragas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
