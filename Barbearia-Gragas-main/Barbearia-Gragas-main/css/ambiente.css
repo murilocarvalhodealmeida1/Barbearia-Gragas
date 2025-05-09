@@ -1,0 +1,457 @@
+/* ===== VARIÁVEIS ===== */
+:root {
+    --dourado: #D4AF37;
+    --dourado-claro: #FFD700;
+    --preto: #000000;
+    --preto-fosco: #1A1A1A;
+    --branco: #FFFFFF;
+    --cinza: #F5F5F5;
+    --cinza-escuro: #333333;
+}
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cinza-escuro);
+    line-height: 1.6;
+    background-color: var(--branco);
+    padding-top: 80px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: var(--preto);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--dourado);
+}
+
+.logo h1 {
+    color: var(--dourado);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+.dropbtn:hover {
+    color: var(--dourado);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--preto);
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid var(--dourado);
+    border-top: none;
+}
+
+.dropdown-content a {
+    color: var(--branco);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--preto-fosco);
+    color: var(--dourado);
+    padding-left: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.botao-login {
+    background-color: transparent;
+    color: var(--dourado);
+    padding: 8px 15px;
+    border: 1px solid var(--dourado);
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.botao-login:hover {
+    background-color: var(--dourado);
+    color: var(--preto);
+}
+
+/* ===== HERO ===== */
+.ambiente-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imagens/equipe/poltronas.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adicionado para centralização horizontal */
+    text-align: center;
+    color: var(--branco);
+    background-attachment: fixed;
+}
+
+.hero-content {
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente os itens filhos */
+    justify-content: center; /* Centraliza verticalmente os itens filhos */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--dourado);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%; /* Garante que o h1 ocupe toda a largura do hero-content */
+}
+
+
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-tour {
+    background-color: transparent;
+    color: var(--branco);
+    border: 2px solid var(--dourado);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-tour:hover {
+    background-color: var(--dourado);
+    color: var(--preto);
+    transform: translateY(-3px);
+}
+
+/* ===== GALERIA INTERATIVA ===== */
+.galeria-interativa {
+    padding: 80px 20px;
+    background-color: var(--cinza);
+    text-align: center;
+}
+
+.galeria-interativa h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.galeria-interativa h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--dourado);
+}
+
+.galeria-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galeria-principal {
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    height: 500px;
+    border: 3px solid var(--dourado);
+}
+
+.galeria-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.galeria-principal:hover img {
+    transform: scale(1.02);
+}
+
+.galeria-miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.miniatura {
+    width: 120px;
+    height: 90px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    object-fit: cover;
+}
+
+.miniatura:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.miniatura.active {
+    border-color: var(--dourado);
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* ===== DESTAQUES ARQUITETÔNICOS ===== */
+.destaques-arquitetonicos {
+    padding: 80px 0;
+    background-color: var(--branco);
+}
+
+.destaques-arquitetonicos h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.destaques-arquitetonicos h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--dourado);
+}
+
+.destaques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.destaque-card {
+    text-align: center;
+}
+
+.destaque-img {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.destaque-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destaque-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 20px;
+    color: var(--branco);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.destaque-overlay h3 {
+    color: var(--dourado);
+    font-size: 1.5rem;
+}
+
+.destaque-card p {
+    font-size: 1.1rem;
+    color: var(--cinza-escuro);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 60px 0 20px;
+    border-top: 2px solid var(--dourado);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: var(--dourado);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-col p {
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social a {
+    color: var(--dourado);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social a:hover {
+    color: var(--dourado-claro);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 992px) {
+    .galeria-principal {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ambiente-hero {
+        height: 60vh;
+        background-attachment: scroll; /* Desativa parallax em mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .galeria-principal {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .destaques-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .miniatura {
+        width: 80px;
+        height: 60px;
+    }
+
+    .dropdown {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+}

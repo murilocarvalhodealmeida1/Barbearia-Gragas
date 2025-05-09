@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<!-- Head igual -->
+<title>Agendamento | Barbearia Gragas</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/agendameto.css">
+
+<body>
+  <!-- Header igual -->
+
+  <main class="agendamento-page">
+    <section class="banner-interno">
+      <h1>Agende seu <span>Horário</span></h1>
+      <p>Escolha o melhor momento para você</p>
+    </section>
+
+    <div class="agendamento-container">
+      <section class="calendario">
+        <h2>Selecione a data</h2>
+        <div class="calendar" id="calendar">
+          <!-- JavaScript irá gerar -->
+        </div>
+      </section>
+
+      <section class="horarios">
+        <h2>Horários disponíveis</h2>
+        <div class="horarios-grid" id="horarios">
+          <!-- JavaScript irá popular -->
+        </div>
+      </section>
+
+      <section class="resumo-agendamento">
+        <h2>Seu agendamento</h2>
+        <div class="resumo-content">
+          <p><strong>Serviço:</strong> <span id="servico-selecionado">Não selecionado</span></p>
+          <!-- Mais detalhes -->
+          <button class="btn" id="confirmar-agendamento">Confirmar</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer igual -->
+  <script src="js/agendamento.js"></script>
+</body>
+</html>
